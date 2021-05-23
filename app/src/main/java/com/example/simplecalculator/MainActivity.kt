@@ -25,9 +25,6 @@ class MainActivity : AppCompatActivity() {
 
 
         addBtn.setOnClickListener {
-//            var num1 = eTFirstNumber.text.toString().toInt()
-//            var num2 = eTNumber2.text.toString().toInt()
-//            var addResult = num1 + num2
             if(eTFirstNumber.text.toString() == "") {
                 Toast.makeText(baseContext,"Enter valid number",Toast.LENGTH_SHORT).show()
 
