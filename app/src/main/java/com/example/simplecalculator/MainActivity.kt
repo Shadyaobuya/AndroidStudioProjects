@@ -22,42 +22,71 @@ class MainActivity : AppCompatActivity() {
         var modulusBtn=findViewById<Button>(R.id.btnModulus)
 
 
+
+
         addBtn.setOnClickListener {
-            var num1 = eTFirstNumber.text.toString().toInt()
-            var num2 = eTNumber2.text.toString().toInt()
-            var addResult=num1+num2
-            answer.text="Answer: ${addResult}"
+//            var num1 = eTFirstNumber.text.toString().toInt()
+//            var num2 = eTNumber2.text.toString().toInt()
+//            var addResult = num1 + num2
+            if(eTFirstNumber.text.toString() == "") {
+                Toast.makeText(baseContext,"Enter valid number",Toast.LENGTH_SHORT).show()
 
+            } else if (eTNumber2.text.toString() == ""){
+                Toast.makeText(baseContext,"Enter valid number",Toast.LENGTH_SHORT).show()}
+            else {
+                var num1 = eTFirstNumber.text.toString().toInt()
+                var num2 = eTNumber2.text.toString().toInt()
 
+                var addResult = num1 + num2
+                answer.text = "Answer: ${addResult}"
+            }
         }
+
         subtractBtn.setOnClickListener {
-            var num1 = eTFirstNumber.text.toString().toInt()
-            var num2 = eTNumber2.text.toString().toInt()
-            var subtractResult=num1-num2
-            answer.text="Answer: ${subtractResult}"
+            if(eTFirstNumber.text.toString() == "") {
+                Toast.makeText(baseContext,"Enter valid number",Toast.LENGTH_SHORT).show()
+
+            } else if (eTNumber2.text.toString() == ""){
+                Toast.makeText(baseContext,"Enter valid number",Toast.LENGTH_SHORT).show()}
+            else {
+                var num1 = eTFirstNumber.text.toString().toInt()
+                var num2 = eTNumber2.text.toString().toInt()
+                var subtractResult = num1 - num2
+                answer.text = "Answer: ${subtractResult}"
+            }
 
         }
 
         multiplyBtn.setOnClickListener {
-            var num1 = eTFirstNumber.text.toString().toInt()
-            var num2 = eTNumber2.text.toString().toInt()
-            var multiplyResult=num1*num2
-            answer.text="Answer:${multiplyResult}"
+            if(eTFirstNumber.text.toString() == "") {
+                Toast.makeText(baseContext,"Enter valid number",Toast.LENGTH_SHORT).show()
 
+            } else if (eTNumber2.text.toString() == ""){
+                Toast.makeText(baseContext,"Enter valid number",Toast.LENGTH_SHORT).show()}
+            else {
+                var num1 = eTFirstNumber.text.toString().toInt()
+                var num2 = eTNumber2.text.toString().toInt()
+                var multiplyResult = num1 * num2
+                answer.text = "Answer:${multiplyResult}"
+            }
         }
 
         modulusBtn.setOnClickListener {
-            var num1 = eTFirstNumber.text.toString().toInt()
-            var num2 = eTNumber2.text.toString().toInt()
-            var modulusResult=num1%num2
-            answer.text="Answer:${modulusResult}"
+            if(eTFirstNumber.text.toString() == "") {
+                Toast.makeText(baseContext,"Enter valid number",Toast.LENGTH_SHORT).show()
 
+            } else if (eTNumber2.text.toString() == ""){
+                Toast.makeText(baseContext,"Enter valid number",Toast.LENGTH_SHORT).show()}
+            else {
+                var num1 = eTFirstNumber.text.toString().toInt()
+                var num2 = eTNumber2.text.toString().toInt()
+                var modulusResult = num1 % num2
+                answer.text = "Answer:${modulusResult}"
+            }
 
         }
 
     }
-
-
     }
 
 
